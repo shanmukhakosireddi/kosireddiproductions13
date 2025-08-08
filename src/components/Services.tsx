@@ -78,7 +78,6 @@ const Services = () => {
           {packages.map((pkg, index) => (
             <div
               key={pkg.id}
-              className="relative bg-[#f5f0e6] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-black/5"
               className="relative bg-[#f8f2ea] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-black/5"
               style={{
                 animationDelay: `${index * 150}ms`
@@ -88,7 +87,6 @@ const Services = () => {
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <div className="bg-black text-[#fdf6ee] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-                  <div className="bg-black text-[#f8f2ea] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                     Most Popular
                   </div>
                 </div>
@@ -109,7 +107,7 @@ const Services = () => {
                 {pkg.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center space-x-3">
                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-black flex items-center justify-center">
-                      <Check className="w-3 h-3 text-[#f8f2ea]" />
+                      <Check className="w-3 h-3 text-[#fdf6ee]" />
                     </div>
                     <span className="text-black font-medium">
                       {feature}
@@ -131,15 +129,12 @@ const Services = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="w-full bg-black text-[#fdf6ee] font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-black/90 hover:scale-105 active:scale-95 uppercase tracking-wide text-sm">
               <button className="w-full bg-black text-[#f8f2ea] font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-black/90 hover:scale-105 active:scale-95 uppercase tracking-wide text-sm">
                 Book Now
               </button>
             </div>
           ))}
         </div>
-            )
-            }
 
         {/* Bottom CTA */}
         <div className="text-center">
@@ -147,14 +142,10 @@ const Services = () => {
             Need something custom? Let's discuss your specific requirements and create a package that perfectly fits your vision.
           </p>
           <button className="bg-black text-[#fdf6ee] font-semibold py-4 px-8 rounded-full hover:bg-black/90 transition-all duration-300 hover:scale-105 uppercase tracking-wide">
-          <button className="bg-black text-[#f8f2ea] font-semibold py-4 px-8 rounded-full hover:bg-black/90 transition-all duration-300 hover:scale-105 uppercase tracking-wide">
             Contact for Custom Quote
           </button>
         </div>
       </div>
-    )
-    )
-    }
     </section>
   );
 };
