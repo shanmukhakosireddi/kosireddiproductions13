@@ -141,7 +141,7 @@ const Services = () => {
           <p className="text-base text-black/80 mb-4 max-w-2xl mx-auto">
             Need something custom? Let's discuss your specific requirements and create a package that perfectly fits your vision.
           </p>
-          <button className="bg-black text-[#fdf6ee] font-semibold py-4 px-8 rounded-full hover:bg-black/90 transition-all duration-300 hover:scale-105 uppercase tracking-wide">
+          <button className="bg-black text-[#f8f2ea] font-semibold py-4 px-8 rounded-full hover:bg-black/90 transition-all duration-300 hover:scale-105 uppercase tracking-wide">
             Contact for Custom Quote
           </button>
         </div>
