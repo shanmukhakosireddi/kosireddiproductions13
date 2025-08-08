@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -32,18 +31,18 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-black overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#f5f0e6]/90 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-8 lg:px-12">
-          <div className="flex items-center justify-between h-20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#f5f0e6]/95 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 sm:py-0 sm:h-16">
             {/* Logo */}
-            <div className={`font-bold text-lg tracking-wide transition-all duration-1000 ${
+            <div className={`font-bold text-base sm:text-lg tracking-wide transition-all duration-1000 text-center sm:text-left mb-2 sm:mb-0 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}>
               Kosireddi Productions
             </div>
             
             {/* Navigation Menu */}
-            <div className={`hidden md:flex space-x-12 transition-all duration-1000 delay-200 ${
+            <div className={`flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6 lg:gap-8 transition-all duration-1000 delay-200 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}>
               {[
@@ -55,7 +54,7 @@ function App() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-sm font-medium text-black/80 hover:text-black transition-all duration-300 relative group"
+                  className="text-xs sm:text-sm font-medium text-black/80 hover:text-black transition-all duration-300 relative group min-h-[48px] flex items-center px-2"
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   {item.name}
@@ -63,21 +62,12 @@ function App() {
                 </button>
               ))}
             </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button className="text-black/80 hover:text-black transition-colors">
-                <div className="w-6 h-0.5 bg-current mb-1.5"></div>
-                <div className="w-6 h-0.5 bg-current mb-1.5"></div>
-                <div className="w-6 h-0.5 bg-current"></div>
-              </button>
-            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center relative px-8 lg:px-12">
+      <section className="min-h-screen flex flex-col justify-center items-center relative px-4 sm:px-6 lg:px-12 pt-20 sm:pt-16">
         {/* Background with semi-circle */}
         <div className="absolute inset-0 overflow-hidden">
           {/* White top half */}
@@ -85,16 +75,16 @@ function App() {
           {/* Black bottom with semi-circle cut */}
           <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-black">
             <div 
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150vw] h-[150vw] bg-white rounded-full"
-              style={{ top: '-75vw', zIndex: 1 }}
+              className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[200vw] sm:w-[150vw] h-[200vw] sm:h-[150vw] bg-white rounded-full"
+              style={{ top: '-100vw', zIndex: 1 }}
             ></div>
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="text-center max-w-6xl mx-auto relative z-20 py-20">
+        <div className="text-center max-w-6xl mx-auto relative z-20 py-8 sm:py-12 lg:py-20">
           {/* Main Heading */}
-          <h1 className={`text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter mb-12 transition-all duration-1500 ${
+          <h1 className={`text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter mb-8 sm:mb-12 transition-all duration-1500 leading-[0.85] ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}>
             <span className="block leading-none">KOSIREDDI</span>
@@ -102,48 +92,19 @@ function App() {
           </h1>
 
           {/* Subheading Line 1 */}
-          <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-normal mb-6 transition-all duration-1500 delay-300 ${
+          <h2 className={`text-lg sm:text-2xl md:text-3xl lg:text-4xl font-normal mb-4 sm:mb-6 transition-all duration-1500 delay-300 px-4 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             Helping Creators Bring Ideas to Life
           </h2>
 
           {/* Subheading Line 2 */}
-          <p className={`text-sm sm:text-base lg:text-lg font-medium tracking-[0.3em] uppercase mb-20 transition-all duration-1500 delay-500 ${
+          <p className={`text-xs sm:text-sm lg:text-base font-medium tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-12 sm:mb-16 lg:mb-20 transition-all duration-1500 delay-500 px-4 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             THROUGH SHOOTING & EDITING MAGIC
           </p>
 
-          {/* Split Content */}
-          <div className={`grid md:grid-cols-2 gap-8 lg:gap-16 max-w-4xl mx-auto mb-24 transition-all duration-1500 delay-700 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
-            <div className="text-center md:text-right">
-              <p className="text-base lg:text-lg font-light lowercase">
-                
-              </p>
-            </div>
-            <div className="text-center md:text-left">
-              <p className="text-base lg:text-lg font-bold uppercase tracking-wide">
-               
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1500 delay-1000 z-20 ${
-          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-        }`}>
-          <button
-            onClick={scrollToExplore}
-            className="flex flex-col items-center gap-3 text-black/60 hover:text-black transition-all duration-300 group"
-          >
-            
-            <div className="relative">
-            </div>
-          </button>
         </div>
       </section>
 
