@@ -67,22 +67,9 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center relative px-4 sm:px-6 lg:px-12 pt-20 sm:pt-16">
-        {/* Background with semi-circle */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* White top half */}
-          <div className="absolute top-0 left-0 right-0 h-1/2 bg-white"></div>
-          {/* Black bottom with semi-circle cut */}
-          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-black">
-            <div 
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[200vw] sm:w-[150vw] h-[200vw] sm:h-[150vw] bg-white rounded-full"
-              style={{ top: '-100vw', zIndex: 1 }}
-            ></div>
-          </div>
-        </div>
-
+      <section className="min-h-screen flex flex-col justify-center items-center bg-white px-4 sm:px-6 lg:px-12 pt-20 sm:pt-16">
         {/* Main Content */}
-        <div className="text-center max-w-6xl mx-auto relative z-20 py-8 sm:py-12 lg:py-20">
+        <div className="text-center max-w-6xl mx-auto py-8 sm:py-12 lg:py-20">
           {/* Main Heading */}
           <h1 className={`text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter mb-8 sm:mb-12 transition-all duration-1500 leading-[0.85] ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
@@ -109,22 +96,22 @@ function App() {
       </section>
 
       {/* My Work Section */}
-      <div id="my-work" className="relative z-30">
+      <div id="my-work">
         <MyWork />
       </div>
 
       {/* Services Section */}
-      <div id="services" className="relative z-30">
+      <div id="services">
         <Services />
       </div>
       
       {/* About Section */}
-      <div id="about" className="relative z-30">
+      <div id="about">
         <About />
       </div>
       
       {/* Contact Section */}
-      <div id="contact" className="relative z-30">
+      <div id="contact">
         <Contact />
       </div>
     </div>
