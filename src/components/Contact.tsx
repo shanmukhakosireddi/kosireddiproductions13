@@ -3,7 +3,7 @@ import { Mail, Linkedin, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section className="bg-[#f5f0e6] flex flex-col py-12">
+    <section className="bg-[#f8f2ea] flex flex-col py-12 min-h-screen w-full">
       {/* Main Content */}
       <div className="flex items-center justify-center px-8 lg:px-12 mb-8">
         <div className="text-center max-w-2xl mx-auto">

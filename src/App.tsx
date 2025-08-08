@@ -146,17 +146,17 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <div id="services" className="pt-16">
+      <div id="services">
         <Services />
       </div>
       
       {/* About Section */}
-      <div id="about" className="pt-16">
+      <div id="about">
         <About />
       </div>
       
       {/* Contact Section */}
-      <div id="contact" className="pt-16">
+      <div id="contact">
         <Contact />
       </div>
     </div>
