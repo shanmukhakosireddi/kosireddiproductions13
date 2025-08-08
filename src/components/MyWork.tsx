@@ -18,8 +18,10 @@ const MyWork = () => {
             {[1, 2, 3, 4].map((index) => (
               <div
                 key={index}
-                className="aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group relative"
               >
+                {/* Hover background overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg"></div>
                 <img
                   src={`https://images.pexels.com/photos/${
                     index === 1 ? '3585047' : 
@@ -31,9 +33,8 @@ const MyWork = () => {
                     index === 3 ? '3184465' : '3184339'
                   }.jpeg?auto=compress&cs=tinysrgb&w=800`}
                   alt={`Work sample ${index}`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-0"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             ))}
           </div>
@@ -53,6 +54,8 @@ const MyWork = () => {
                 key={index}
                 className="aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group relative"
               >
+                {/* Hover background overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg"></div>
                 <img
                   src={`https://images.pexels.com/photos/${
                     index === 1 ? '3585047' : 
@@ -62,10 +65,10 @@ const MyWork = () => {
                     index === 2 ? '3184418' : '3184465'
                   }.jpeg?auto=compress&cs=tinysrgb&w=800`}
                   alt={`Video thumbnail ${index}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover relative z-0"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-all duration-300">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-20">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-30">
                     <Play className="w-6 h-6 text-black ml-1" fill="currentColor" />
                   </div>
                 </div>
@@ -102,8 +105,10 @@ const MyWork = () => {
             href="https://youtube.com/@shanmukhakosireddi"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-3 bg-red-600 text-white font-semibold py-4 px-8 rounded-full hover:bg-red-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg"
+            className="inline-flex items-center space-x-3 bg-red-600 text-white font-semibold py-4 px-8 rounded-full hover:bg-red-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg relative group"
           >
+            {/* Hover background overlay for button */}
+            <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-red-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
             <ExternalLink className="w-5 h-5" />
             <span className="uppercase tracking-wide">Subscribe</span>
           </a>
