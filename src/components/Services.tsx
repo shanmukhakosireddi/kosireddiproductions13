@@ -8,6 +8,7 @@ const Services = () => {
       title: 'Basic Package',
       price: '₹269',
       color: 'emerald',
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSecpBwKIs6N8IfquAhNOYva6xw5SLCcGx9kN5p3L-dAAlCpRQ/viewform?usp=header',
       features: [
         'Shooting',
         'Lighting',
@@ -23,6 +24,7 @@ const Services = () => {
       title: 'Standard Package',
       price: '₹399',
       color: 'blue',
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdiEGWjjEZBYbDTJrKhS-ezR63T909mcbP_xZhStnl3ko9zTg/viewform?usp=header',
       features: [
         'Shooting',
         'Lighting',
@@ -42,6 +44,7 @@ const Services = () => {
       title: 'Premium Package',
       price: '₹699',
       color: 'purple',
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfN6JnJKLxGS91n5AKywRmtxKZqmQksmC_GrQe0DBerXgnTWg/viewform?usp=header',
       features: [
         'Shooting',
         'Lighting',
@@ -129,9 +132,14 @@ const Services = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="w-full bg-black text-[#f8f2ea] font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-black/90 hover:scale-105 active:scale-95 uppercase tracking-wide text-sm min-h-[48px] touch-manipulation">
+              <a
+                href={pkg.formUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-black text-[#f8f2ea] font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-black/90 hover:scale-105 active:scale-95 uppercase tracking-wide text-sm min-h-[48px] touch-manipulation inline-flex items-center justify-center"
+              >
                 Book Now
-              </button>
+              </a>
             </div>
           ))}
         </div>
