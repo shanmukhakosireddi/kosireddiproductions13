@@ -3,6 +3,7 @@ import { ChevronDown } from 'lucide-react';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
+import MyWork from './components/MyWork';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -46,6 +47,7 @@ function App() {
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}>
               {[
+                { name: 'My Work', id: 'my-work' },
                 { name: 'Services', id: 'services' },
                 { name: 'About', id: 'about' },
                 { name: 'Contact', id: 'contact' }
@@ -144,6 +146,11 @@ function App() {
           </button>
         </div>
       </section>
+
+      {/* My Work Section */}
+      <div id="my-work" className="relative z-30">
+        <MyWork />
+      </div>
 
       {/* Services Section */}
       <div id="services" className="relative z-30">
