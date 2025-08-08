@@ -138,6 +138,8 @@ const Services = () => {
             </div>
           ))}
         </div>
+            )
+            }
 
         {/* Bottom CTA */}
         <div className="text-center">
@@ -150,6 +152,9 @@ const Services = () => {
           </button>
         </div>
       </div>
+    )
+    )
+    }
     </section>
   );
 };
