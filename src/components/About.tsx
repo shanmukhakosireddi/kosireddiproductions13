@@ -9,7 +9,7 @@ const About = () => {
           <div className="flex justify-center lg:justify-end order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/api/placeholder/400/500"
+                src="https://i.postimg.cc/Njgn03JN/IMG-20250710-205512573.jpg"
                 alt="Shanmukha Kosireddi"
                 className="w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[500px] object-cover rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
               />
