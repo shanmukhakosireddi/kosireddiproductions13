@@ -145,14 +145,7 @@ const Services = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center">
-          <p className="text-sm sm:text-base text-black/80 mb-4 max-w-2xl mx-auto px-4">
-            Need something custom? Let's discuss your specific requirements and create a package that perfectly fits your vision.
-          </p>
-          <button className="bg-black text-[#f8f2ea] font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-black/90 transition-all duration-300 hover:scale-105 uppercase tracking-wide text-sm sm:text-base min-h-[48px] touch-manipulation">
-            Contact for Custom Quote
-          </button>
-        </div>
+       
       </div>
     </section>
   );
