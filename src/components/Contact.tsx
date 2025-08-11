@@ -28,7 +28,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="text-sm sm:text-base lg:text-lg text-[#111] hover:text-[#111]/70 transition-colors duration-300 break-all sm:break-normal min-h-[48px] flex items-center"
               >
-                kosireshanmukha@gmail.com
+                kosireddishanmukha@gmail.com
               </a>
             </div>
 
