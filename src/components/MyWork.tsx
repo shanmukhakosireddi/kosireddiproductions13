@@ -98,41 +98,43 @@ const MyWork = () => {
 
         {/* YouTube Channel Section */}
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase mb-4 sm:mb-6">
-            FIND ME ON YOUTUBE
-          </h2>
-          
-          <p className="text-sm sm:text-base lg:text-lg text-black/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-            I post weekly content on filmmaking, creativity, and student life.
-          </p>
-          
-          {/* YouTube Channel Info */}
-          <div className="flex flex-col items-center mb-6 sm:mb-8">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-red-600 rounded-full flex items-center justify-center mb-3 sm:mb-4 shadow-lg">
-              <span className="text-white font-bold text-lg sm:text-2xl">SK</span>
-            </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-black mb-1 sm:mb-2">
-              Shanmukha Kosireddi
-            </h3>
-            <p className="text-sm text-black/60">
-              @shanmukhakosireddi
-            </p>
-          </div>
-          
-          {/* Subscribe Button */}
-          <a
-            href="https://youtube.com/@shanmukhakosireddi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 sm:space-x-3 bg-red-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-red-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg relative group min-h-[48px] touch-manipulation"
-          >
-            {/* Hover background overlay for button */}
-            <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-red-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-            <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span className="uppercase tracking-wide text-sm sm:text-base">Subscribe</span>
-          </a>
-        </div>
-      </div>
+  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase mb-4 sm:mb-6">
+    FIND ME ON YOUTUBE
+  </h2>
+
+  <p className="text-sm sm:text-base lg:text-lg text-black/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
+    I post weekly content on filmmaking, creativity, and student life.
+  </p>
+
+  {/* YouTube Channel Info */}
+  <div className="flex flex-col items-center mb-6 sm:mb-8">
+    <img
+      src="https://i.postimg.cc/N0Z2NwZb/channels4-profile.jpg"
+      alt="Shanmukha Kosireddi YouTube Profile"
+      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full shadow-lg mb-3 sm:mb-4 object-cover"
+    />
+    <h3 className="text-lg sm:text-xl font-semibold text-black mb-1 sm:mb-2">
+      Shanmukha Kosireddi
+    </h3>
+    <p className="text-sm text-black/60">
+      @stylekosireddi
+    </p>
+  </div>
+
+  {/* Subscribe Button */}
+  <a
+    href="https://www.youtube.com/@stylekosireddi"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center space-x-2 sm:space-x-3 bg-red-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-red-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg relative group min-h-[48px] touch-manipulation"
+  >
+    {/* Hover background overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-red-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+    <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
+    <span className="uppercase tracking-wide text-sm sm:text-base">Subscribe</span>
+  </a>
+</div>
+
     </section>
   );
 };
