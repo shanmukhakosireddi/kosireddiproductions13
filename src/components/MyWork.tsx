@@ -143,6 +143,7 @@ const MyWork = () => {
               </a>
             ))}
           </div>
+        </div>
 
         {/* YouTube Channel Section */}
         <div className="text-center">
