@@ -40,14 +40,65 @@ const MyWork = () => {
         </div>
 
         {/* Videos Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase">
+        <div className="mb-16 sm:mb-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase mb-4">
               MY VIDEOS
             </h2>
+            <p className="text-sm sm:text-base text-black/70 max-w-2xl mx-auto">
+              Watch my latest work and creative projects
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+          {/* Video Grid */}
+          <div className="bg-[#faf4ed] rounded-2xl p-6 sm:p-8 lg:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+              {[
+                {
+                  thumbnail: "https://img.youtube.com/vi/NSUw4cPtLJ4/hqdefault.jpg",
+                  link: "https://www.youtube.com/watch?v=NSUw4cPtLJ4"
+                },
+                {
+                  thumbnail: "https://img.youtube.com/vi/JlTWD9jh9as/hqdefault.jpg",
+                  link: "https://www.youtube.com/watch?v=JlTWD9jh9as"
+                },
+                {
+                  thumbnail: "https://img.youtube.com/vi/ACrOQ3WkOdo/hqdefault.jpg",
+                  link: "https://www.youtube.com/watch?v=ACrOQ3WkOdo"
+                },
+                {
+                  thumbnail: "https://img.youtube.com/vi/1DgAEc9206c/hqdefault.jpg",
+                  link: "https://www.youtube.com/watch?v=1DgAEc9206c"
+                }
+              ].map((video, index) => (
+                <a
+                  key={index}
+                  href={video.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative aspect-video bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 transform"
+                >
+                  {/* Video Thumbnail */}
+                  <img
+                    src={video.thumbnail}
+                    alt={`Video ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-300"></div>
+
+                  {/* Play Button */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-white transition-all duration-300 shadow-lg">
+                      <Play className="w-6 h-6 sm:w-8 sm:h-8 text-black ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
             {[
               {
                 thumbnail: "https://img.youtube.com/vi/NSUw4cPtLJ4/hqdefault.jpg",
