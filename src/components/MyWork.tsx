@@ -124,10 +124,10 @@ const MyWork = () => {
             href="https://www.youtube.com/@stylekosireddi"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 sm:space-x-3 bg-red-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-red-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg relative group min-h-[48px] touch-manipulation"
+            className="inline-flex items-center space-x-2 sm:space-x-3 bg-amber-800 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-amber-900 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg relative group min-h-[48px] touch-manipulation"
           >
             {/* Hover background overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-red-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-900/20 to-amber-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
             <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
             <span className="uppercase tracking-wide text-sm sm:text-base">Subscribe</span>
           </a>
