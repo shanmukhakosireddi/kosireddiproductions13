@@ -20,17 +20,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-4 sm:space-y-6">
           {/* Email */}
-<div className="flex items-center justify-center gap-3 sm:gap-4 px-4 py-2">
-  <Mail className="w-6 h-6 text-red-600 transition-colors duration-300 group-hover:text-red-700" />
-  <a
-    href="mailto:kosireddishanmukha@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-sm sm:text-base lg:text-lg font-medium text-[#111] hover:text-red-700 transition-colors duration-300 underline-offset-4 hover:underline"
-  >
-    kosireddishanmukha@gmail.com
-  </a>
-</div>
+
 
             {/* LinkedIn */}
             <div className="flex items-center justify-center space-x-3 sm:space-x-4 px-4">
