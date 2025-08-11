@@ -19,7 +19,7 @@ const MyWork = () => {
               "https://i.postimg.cc/MGRn4BWj/burntcolor-mov-01-00-31-00-Still002.jpg", // Image 1
               "https://i.postimg.cc/B642Bpxv/Whats-App-Image-2025-08-11-at-10-53-14-4b1d561e.jpg", // Image 2
               "https://i.postimg.cc/d0BhwYyq/Whats-App-Image-2025-08-11-at-10-51-08-d34a2a6c.jpg",  // Image 3
-              "https://i.postimg.cc/Jn3V9rDq/websiteimage.jpg"  // Image 4
+              "https://i.postimg.cc/3r1Lj308/Whats-App-Image-2025-08-10-at-19-58-20-fc7de8a6.jpg"  // Image 4
             ].map((imageUrl, index) => (
               <div
                 key={index}
