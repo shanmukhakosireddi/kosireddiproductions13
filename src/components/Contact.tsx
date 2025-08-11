@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="flex items-center justify-center space-x-3 sm:space-x-4 px-4">
               <Mail className="w-6 h-6 text-[#111]" />
               <a
-                href="mailto:kosireshanmukha@gmail.com"
+                href="mailto:kosireddishanmukha@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm sm:text-base lg:text-lg text-[#111] hover:text-[#111]/70 transition-colors duration-300 break-all sm:break-normal min-h-[48px] flex items-center"
