@@ -41,41 +41,60 @@ const MyWork = () => {
 
 
         {/* Videos Section */}
-        <div className="mb-16 sm:mb-20">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase">
-              MY VIDEOS
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {[1, 2, 3].map((index) => (
-              <div
-                key={index}
-                className="aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group relative touch-manipulation"
-              >
-                {/* Hover background overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg"></div>
-                <img
-                  src={`https://images.pexels.com/photos/${
-                    index === 1 ? '3585047' : 
-                    index === 2 ? '3184418' : '3184465'
-                  }/pexels-photo-${
-                    index === 1 ? '3585047' : 
-                    index === 2 ? '3184418' : '3184465'
-                  }.jpeg?auto=compress&cs=tinysrgb&w=800`}
-                  alt={`Video thumbnail ${index}`}
-                  className="w-full h-full object-cover relative z-0"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-20">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-30 touch-manipulation">
-                    <Play className="w-4 h-4 sm:w-6 sm:h-6 text-black ml-1" fill="currentColor" />
-                  </div>
-                </div>
-              </div>
-            ))}
+        {/* Videos Section */}
+<div className="mb-20">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-black uppercase">
+      MY VIDEOS
+    </h2>
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+    {[
+      {
+        thumbnail: "https://img.youtube.com/vi/NSUw4cPtLJ4/hqdefault.jpg",
+        link: "https://www.youtube.com/watch?v=NSUw4cPtLJ4"
+      },
+      {
+        thumbnail: "https://img.youtube.com/vi/JlTWD9jh9as/hqdefault.jpg",
+        link: "https://www.youtube.com/watch?v=JlTWD9jh9as"
+      },
+      {
+        thumbnail: "https://img.youtube.com/vi/ACrOQ3WkOdo/hqdefault.jpg",
+        link: "https://www.youtube.com/watch?v=ACrOQ3WkOdo"
+      },
+      {
+        thumbnail: "https://img.youtube.com/vi/1DgAEc9206c/hqdefault.jpg",
+        link: "https://www.youtube.com/watch?v=1DgAEc9206c"
+      }
+    ].map((video, index) => (
+      <a
+        key={index}
+        href={video.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group relative"
+      >
+        {/* Hover background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg"></div>
+
+        {/* Video Thumbnail */}
+        <img
+          src={video.thumbnail}
+          alt={`Video thumbnail ${index + 1}`}
+          className="w-full h-full object-cover relative z-0"
+        />
+
+        {/* Play Button Overlay */}
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-20">
+          <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-30">
+            <Play className="w-6 h-6 text-black ml-1" fill="currentColor" />
           </div>
         </div>
+      </a>
+    ))}
+  </div>
+</div>
 
         {/* YouTube Channel Section */}
         <div className="text-center">
