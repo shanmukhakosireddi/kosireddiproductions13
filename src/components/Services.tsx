@@ -68,16 +68,7 @@ const Services = () => {
         'Only Reels (Less than 1 min)',
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
-        '2 Revisions',
-        <a
-          key="My work"
-          href="https://www.youtube.com/@StartOverVibe"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black font-medium hover:text-black/70 transition-colors duration-300"
-        >
-          My work
-        </a>
+        '2 Revisions'
       ],
       
       accentColor: 'bg-green-100 text-green-800'
@@ -92,16 +83,7 @@ const Services = () => {
         'Editing (1–5 mins)',
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
-        '2 Revisions',
-        <a
-          key="My work"
-          href="https://www.youtube.com/@stylekosireddi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black font-medium hover:text-black/70 transition-colors duration-300"
-        >
-          My work
-        </a>
+        '2 Revisions'
       ],
       
       accentColor: 'bg-orange-100 text-orange-800'
@@ -178,6 +160,22 @@ const Services = () => {
                   </p>
                 )}
               </div>
+
+              {/* Work Portfolio Link (for editing packages only) */}
+              {(pkg.id === 'Editing by Chetan' || pkg.id === 'Editing by  Shanmukha') && (
+                <div className="mb-4 sm:mb-6">
+                  <a
+                    href={pkg.id === 'Editing by Chetan' ? 'https://www.youtube.com/@StartOverVibe' : 'https://www.youtube.com/@stylekosireddi'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-medium text-black/80 hover:text-black transition-all duration-300 underline decoration-2 underline-offset-4 hover:decoration-black/60 group"
+                  >
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      View My Work →
+                    </span>
+                  </a>
+                </div>
+              )}
 
               {/* CTA Button */}
               <a
