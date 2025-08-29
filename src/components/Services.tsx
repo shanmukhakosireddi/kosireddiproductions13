@@ -83,9 +83,8 @@ const Services = () => {
       features: [
         'Editing (1–5 mins)',
         'Color Grading',
-        'Advanced Text & Motion Graphics',
-        '4 Revisions',
-        'YouTube Channel Optimization'
+        'Text Animation & Effects (Based on Video)',
+        '2 Revisions',
       ],
       subtext: '🔥 Great for YouTube Videos, Longer Reels',
       idealFor: '🎥 Ideal for: YouTubers, Vloggers',
