@@ -69,9 +69,8 @@ const Services = () => {
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
         '2 Revisions',
-        'work',
         <a
-          key="youtube-link"
+          key="My work"
           href="https://www.youtube.com/@StartOverVibe"
           target="_blank"
           rel="noopener noreferrer"
