@@ -60,7 +60,7 @@ const Services = () => {
     },
     {
       id: 'Editing by Chetan',
-      title: 'Editing 1',
+      title: 'Editing by Chetan',
       price: '₹149',
       color: 'green',
       formUrl: 'https://www.instagram.com/chetu1486_0/',
@@ -76,7 +76,7 @@ const Services = () => {
     },
     {
       id: 'Editing by  Shanmukha',
-      title: 'Editing 2',
+      title: 'Editing by  Shanmukha',
       price: '₹299',
       color: 'orange',
       formUrl: 'https://www.instagram.com/kosireddiproductions?igsh=MTZiejRxMjl4bzAxZw== ',
