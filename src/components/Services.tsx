@@ -69,7 +69,16 @@ const Services = () => {
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
         '2 Revisions',
-        'work'
+        'work',
+        <a
+          key="youtube-link"
+          href="https://www.youtube.com/@StartOverVibe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black font-medium hover:text-black/70 transition-colors duration-300"
+        >
+          YouTube Channel
+        </a>
       ],
       
       accentColor: 'bg-green-100 text-green-800'
