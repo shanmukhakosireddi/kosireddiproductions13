@@ -70,8 +70,7 @@ const Services = () => {
         'Text Animation & Effects (Based on Video)',
         '2 Revisions'
       ],
-      subtext: '⚡ Perfect for Instagram Reels & YouTube Shorts',
-      idealFor: '🎯 Ideal for: Social Media Creators',
+      
       accentColor: 'bg-green-100 text-green-800'
     },
     {
@@ -86,8 +85,7 @@ const Services = () => {
         'Text Animation & Effects (Based on Video)',
         '2 Revisions',
       ],
-      subtext: '🔥 Great for YouTube Videos, Longer Reels',
-      idealFor: '🎥 Ideal for: YouTubers, Vloggers',
+      
       accentColor: 'bg-orange-100 text-orange-800'
     }
   ];
