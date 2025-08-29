@@ -95,7 +95,7 @@ const Services = () => {
         '2 Revisions',
         <a
           key="My work"
-          href="https://www.youtube.com/@StartOverVibe"
+          href="https://www.youtube.com/@stylekosireddi"
           target="_blank"
           rel="noopener noreferrer"
           className="text-black font-medium hover:text-black/70 transition-colors duration-300"
