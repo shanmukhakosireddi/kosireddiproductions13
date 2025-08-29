@@ -59,6 +59,38 @@ const Services = () => {
       accentColor: 'bg-purple-100 text-purple-800'
     }
   ];
+  {
+      id: 'editing1',
+      title: 'Editing 1',
+      price: '₹149',
+      color: 'green',
+      features: [
+        'Only Reels (Less than 1 min)',
+        'Color Grading',
+        'Text Animation & Effects (Based on Video)',
+        '2 Revisions'
+      ],
+      subtext: '⚡ Perfect for Instagram Reels & YouTube Shorts',
+      idealFor: '🎯 Ideal for: Social Media Creators',
+      accentColor: 'bg-green-100 text-green-800'
+    },
+    {
+      id: 'editing2',
+      title: 'Editing 2',
+      price: '₹299',
+      color: 'orange',
+      features: [
+        'Editing (1–5 mins)',
+        'Color Grading',
+        'Advanced Text & Motion Graphics',
+        '4 Revisions',
+        'YouTube Channel Optimization'
+      ],
+      subtext: '🔥 Great for YouTube Videos, Longer Reels',
+      idealFor: '🎥 Ideal for: YouTubers, Vloggers',
+      accentColor: 'bg-orange-100 text-orange-800'
+    }
+  ];
 
   return (
     <section className="bg-[#f8f2ea] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12 min-h-screen w-full">
