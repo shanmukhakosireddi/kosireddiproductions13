@@ -57,13 +57,13 @@ const Services = () => {
       subtext: '🎬 Ideal for: Vlogs, Interviews, Client Work',
       idealFor: '',
       accentColor: 'bg-purple-100 text-purple-800'
-    }
-  ];
-  {
+    },
+    {
       id: 'editing1',
       title: 'Editing 1',
       price: '₹149',
       color: 'green',
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-editing1-form/viewform',
       features: [
         'Only Reels (Less than 1 min)',
         'Color Grading',
@@ -79,6 +79,7 @@ const Services = () => {
       title: 'Editing 2',
       price: '₹299',
       color: 'orange',
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-editing2-form/viewform',
       features: [
         'Editing (1–5 mins)',
         'Color Grading',
