@@ -69,6 +69,7 @@ const Services = () => {
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
         '2 Revisions'
+        'work'
       ],
       
       accentColor: 'bg-green-100 text-green-800'
