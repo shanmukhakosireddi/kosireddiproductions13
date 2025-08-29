@@ -76,7 +76,7 @@ const Services = () => {
     {
       id: 'Editing by  Shanmukha',
       title: 'Editing by  Shanmukha',
-      price: '₹299',
+      price: '₹200',
       color: 'orange',
       formUrl: 'https://www.instagram.com/kosireddiproductions?igsh=MTZiejRxMjl4bzAxZw== ',
       features: [
