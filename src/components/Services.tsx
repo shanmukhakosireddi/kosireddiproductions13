@@ -70,6 +70,7 @@ const Services = () => {
         'Text Animation & Effects (Based on Video)',
         '2 Revisions',
         'My Mail: vallamkoduchethan@gmail.com',
+        'My portfolio: http://bit.ly/47Ooeqr'
       ],
       
       accentColor: 'bg-green-100 text-green-800'
