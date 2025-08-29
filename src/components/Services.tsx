@@ -79,7 +79,7 @@ const Services = () => {
       title: 'Editing 2',
       price: '₹299',
       color: 'orange',
-      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-editing2-form/viewform',
+      formUrl: 'https://www.instagram.com/kosireddiproductions?igsh=MTZiejRxMjl4bzAxZw== ',
       features: [
         'Editing (1–5 mins)',
         'Color Grading',
