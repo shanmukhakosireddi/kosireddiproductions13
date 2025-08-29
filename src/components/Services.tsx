@@ -68,7 +68,7 @@ const Services = () => {
         'Only Reels (Less than 1 min)',
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
-        '2 Revisions'
+        '2 Revisions',
         'work'
       ],
       
