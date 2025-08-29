@@ -59,7 +59,7 @@ const Services = () => {
       accentColor: 'bg-purple-100 text-purple-800'
     },
     {
-      id: 'editing1',
+      id: 'Editing by Chetan',
       title: 'Editing 1',
       price: '₹149',
       color: 'green',
@@ -75,7 +75,7 @@ const Services = () => {
       accentColor: 'bg-green-100 text-green-800'
     },
     {
-      id: 'editing2',
+      id: 'Editing by  Shanmukha',
       title: 'Editing 2',
       price: '₹299',
       color: 'orange',
