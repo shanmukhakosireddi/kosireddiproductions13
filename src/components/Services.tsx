@@ -63,7 +63,7 @@ const Services = () => {
       title: 'Editing 1',
       price: '₹149',
       color: 'green',
-      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-editing1-form/viewform',
+      formUrl: 'https://www.instagram.com/chetu1486_0/',
       features: [
         'Only Reels (Less than 1 min)',
         'Color Grading',
