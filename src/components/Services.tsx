@@ -76,7 +76,7 @@ const Services = () => {
           rel="noopener noreferrer"
           className="text-black font-medium hover:text-black/70 transition-colors duration-300"
         >
-          YouTube Channel
+          My work
         </a>
       ],
       
