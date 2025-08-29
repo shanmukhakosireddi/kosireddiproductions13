@@ -68,7 +68,8 @@ const Services = () => {
         'Only Reels (Less than 1 min)',
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
-        '2 Revisions'
+        '2 Revisions',
+        'My Mail: vallamkoduchethan@gmail.com',
       ],
       
       accentColor: 'bg-green-100 text-green-800'
@@ -83,7 +84,8 @@ const Services = () => {
         'Editing (1–5 mins)',
         'Color Grading',
         'Text Animation & Effects (Based on Video)',
-        '2 Revisions'
+        '2 Revisions',
+        'My Mail: kosireddishanmukha@gmail.com'
       ],
       
       accentColor: 'bg-orange-100 text-orange-800'
